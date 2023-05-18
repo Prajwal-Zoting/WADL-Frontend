@@ -9,7 +9,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import 'jquery/dist/jquery.js';
-const baseURL = "http://localhost:8000/";
+const baseURL = "https://wadl-project.onrender.com/";
 setInterval(async () => {
   axios.get({baseURL}).then(data=>{
   console.log(data)
@@ -22,7 +22,7 @@ setInterval(async () => {
 
 //axios.defaults.baseURL = 'http://localhost:3001/api';
 // http://zany-periodic-fisherman.glitch.me/api
-axios.defaults.baseURL = 'http://localhost:8000/api';
+axios.defaults.baseURL = 'https://wadl-project.onrender.com/api';
     let userData =  JSON.parse(localStorage.getItem("userData"))
     let token
     if(userData){
